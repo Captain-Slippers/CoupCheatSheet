@@ -1,0 +1,17 @@
+<div class="main">
+  <div class="title">
+    <h1>Coup Cheatsheet</h1>
+  </div>
+  
+  <div class="content">
+    <button routerLink="/create" mat-raised-button >New Sheet</button>
+    
+
+    <form class="example-form">
+      <mat-form-field class="EnterCode">
+        <input matInput maxlength="5" #message placeholder="Enter Code">
+        <mat-hint align="end">{{message.value.length}} / 5</mat-hint>
+      </mat-form-field>
+    </form>
+  </div>
+</div>

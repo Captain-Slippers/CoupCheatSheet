@@ -1,0 +1,25 @@
+<div class="main">
+  <h1>Create a sheet</h1>
+  <button routerLink="/view" mat-raised-button [disabled]="completedArray" color="primary" (click)="createSheet()" >Create</button>
+</div>
+
+<div class="content">
+  <h3>Finance</h3>
+    <div class="row">
+      <button [disabled]="financeButtons[finance.indexOf(item)]" mat-raised-button color="basic" (click)="declaringArray(item)" *ngFor="let item of finance">{{item}}</button>
+    </div>
+
+  <h3>Force</h3>
+    <div class="row">
+      <button [disabled]="forceButtons[force.indexOf(item)]" mat-raised-button color="basic" (click)="declaringArray(item)" *ngFor="let item of force">{{item}}</button>
+    </div>
+
+  <h3>Communications</h3>
+    <div class="row">
+      <button [disabled]="communicationsButtons[communications.indexOf(item)]" mat-raised-button color="basic" (click)="declaringArray(item)" *ngFor="let item of communications">{{item}}</button>
+    </div>
+  
+  <h3>Special Interest</h3>
+    <div class="row">
+      <button [disabled]="specialInterestButtons[specialInterest.indexOf(item)]" mat-raised-button color="basic" (click)="declaringArray(item)" *ngFor="let item of specialInterest">{{item}}</button>
+    </div>
