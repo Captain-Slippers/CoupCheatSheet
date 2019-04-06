@@ -18,8 +18,8 @@
     <div class="row">
       <button [disabled]="communicationsButtons[communications.indexOf(item)]" mat-raised-button color="basic" (click)="declaringArray(item)" *ngFor="let item of communications">{{item}}</button>
     </div>
-  
-  <h3>Special Interest</h3>
+
+  <h3>Special Interest (Select 2)</h3>
     <div class="row">
       <button [disabled]="specialInterestButtons[specialInterest.indexOf(item)]" mat-raised-button color="basic" (click)="declaringArray(item)" *ngFor="let item of specialInterest">{{item}}</button>
     </div>
