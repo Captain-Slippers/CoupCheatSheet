@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-view-sheet',
   templateUrl: './view-sheet.component.html',
@@ -8,6 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class ViewSheetComponent implements OnInit {
   constructor() { }
 
+  index = 2
+
+  //Man this is a mess
   communicationCards =    ['Director', 'Newscaster', 'Producer', 'Reporter', 'Writer'];
   financeCards =          ['Banker', 'Capitalst', 'Speculator', 'Spy'];
   forceCards =            ['Crime Boss', 'General', 'Guerrilla', 'Judge', 'Mercenary'];
@@ -23,7 +27,6 @@ export class ViewSheetComponent implements OnInit {
   StorageCards2 = this.StorageCards.split(',');
   code = '512d2';
 
-
 // tslint:disable-next-line: max-line-length
   cards =   [this.financeFolder + this.StorageCards2[0],
              this.forceFolder + this.StorageCards2[1],
@@ -38,21 +41,16 @@ export class ViewSheetComponent implements OnInit {
 
   }
 
-
-  nextCard(){
-    // var tmp;
-    // var tmp2 = this.cards[4]
-    // console.table(this.cards);
-
-
-    // for (let i = 4; i >= 0; i--) {
-    //   if (i == 0){
-    //     this.cards[i] = tmp2;
-    //   } else{
-    //     tmp = this.cards[i];
-    //     this.cards[i] = this.cards[i-1];
-    //   }
-    //   // console.table(this.cards);
-    // }
+  changeCard(direction){
+    if (direction == 'f'){
+      if (this.index < 4){
+        this.index += 1
+      }
+    }
+    else if (direction == 'b'){
+      if (this.index > 0){
+        this.index -= 1
+      }
+    }
   }
 }

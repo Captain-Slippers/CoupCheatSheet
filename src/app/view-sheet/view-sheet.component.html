@@ -1,22 +1,19 @@
 <div class="main">
   <h1>Your Cheatsheet</h1>
   <p>code: {{code}} </p>
-  <button mat-raised-button (click)="nextCard();">Next</button>
+  <div class="buttons">
+    <button mat-raised-button (click)="changeCard('b');">Back</button>
+    <button mat-raised-button (click)="changeCard('f');">Next</button>
+  </div>
 </div>
 
-<div class="slider"> 
-  
-  <img class="card-1 card" src={{cards[0]}}.png>
-    
-  <img class="card-2 card" src={{cards[1]}}.png>
+<div class="slider">
 
-  <img class="card-3 card" src={{cards[2]}}.png>
-
-  <img class="card-4 card" src={{cards[3]}}.png>
-
-  <img class="card-5 card" src={{cards[4]}}.png>
+  <img class="currend-card card" src={{cards[index]}}.png>
 
 </div>
+
+<!-- <h1>{{index}}</h1> -->
 
 <div class="big-card">
   <img src="../../assets/images/detailed/BigCard.JPG">

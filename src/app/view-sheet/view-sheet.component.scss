@@ -2,62 +2,21 @@
     padding-top: 15%;
 }
 
+.slider{
+  padding-top: 5%;
+  display: flex;
+  justify-content: center
+}
+
+.buttons {
+  width: 40%;
+  display: flex;
+  justify-content: space-between
+}
+
 .card {
     width: 50%;
     height: 100%;
-    background-color: black;
-}
-
-.slider {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-
-.main p {
-    margin-top: 0;
-    margin-bottom: 10%;
-}
-
-
-.card-3 {
-    z-index: 3;
-}
-.card-2 {
-    margin-right: -30%;
-    margin-top: 10%;
-    transform: rotate(-20deg);
-    z-index: 2;
-    width: 45%;
-    //filter: blur(1px);
-    //filter: grayscale(40%);
-}
-.card-4 {
-    margin-left: -30%;
-    margin-top: 10%;
-    transform: rotate(20deg);
-    z-index: 2;
-    width: 45%;
-    //filter: blur(1px);
-    //filter: grayscale(40%);
-}
-.card-5 {
-    margin-left: -20%;
-    margin-top: 30%;
-    transform: rotate(40deg);
-    z-index: 1;
-    width: 35%;
-    //filter: blur(4px);
-    //filter: grayscale(70%);
-}
-.card-1 {
-    margin-right: -20%;
-    margin-top: 30%;
-    transform: rotate(-40deg);
-    z-index: 1;
-    width: 35%;
-    //filter: blur(4px);
-    //filter: grayscale(70%);
 }
 
 .big-card {

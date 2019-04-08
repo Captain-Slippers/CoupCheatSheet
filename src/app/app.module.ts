@@ -11,7 +11,6 @@ import { HomeComponent } from './home/home.component';
 import { CreateSheetComponent } from './create-sheet/create-sheet.component';
 import { ViewSheetComponent } from './view-sheet/view-sheet.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +25,7 @@ import { ViewSheetComponent } from './view-sheet/view-sheet.component';
 
     MatButtonModule,
     MatInputModule,
-    
+
   ],
   providers: [],
   bootstrap: [AppComponent]
