@@ -1,0 +1,33 @@
+{
+    "Finance": [
+        {"title": "Banker"},
+        {"title": "Capitalst"},
+        {"title": "Speculator"},
+        {"title": "Speculator"}
+    ],
+    "Force": [
+      {"title": "Crime Boss"},
+      {"title": "General"},
+      {"title": "Guerrilla"},
+      {"title": "Judge"},
+      {"title": "Mercenary"}
+    ],
+    "Communications": [
+      {"title": "Director"},
+      {"title": "Newscaster"},
+      {"title": "Producer"},
+      {"title": "Reporter"},
+      {"title": "Writer"}
+    ],
+    "Special Interest": [
+      {"title": "Crime Boss"},
+      {"title": "Customs Officer"},
+      {"title": "Foreign Consular"},
+      {"title": "Intellectual"},
+      {"title": "Lawyer"},
+      {"title": "Peace Keeper"},
+      {"title": "Politician"},
+      {"title": "Priest"},
+      {"title": "Protester"}
+    ]
+}

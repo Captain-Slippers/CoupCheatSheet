@@ -1,22 +1,16 @@
+import { CardModule } from './../card/card.module';
 import { Component, OnInit } from '@angular/core';
-
 
 @Component({
   selector: 'app-view-sheet',
   templateUrl: './view-sheet.component.html',
   styleUrls: ['./view-sheet.component.scss']
 })
-export class ViewSheetComponent implements OnInit {
-  constructor() { }
+export class ViewSheetComponent implements OnInit  {
+  constructor() {
+  }
 
-  index = 2
-
-  //Man this is a mess
-  communicationCards =    ['Director', 'Newscaster', 'Producer', 'Reporter', 'Writer'];
-  financeCards =          ['Banker', 'Capitalst', 'Speculator', 'Spy'];
-  forceCards =            ['Crime Boss', 'General', 'Guerrilla', 'Judge', 'Mercenary'];
-  specialInterestCards =  ['Communist', 'Customs Officer', 'Foreign Consular',
-                          'Intellectual', 'Lawyer', 'Peace Keeper', 'Politician', 'Priest', 'Protester'];
+  index = 0
 
   financeFolder =           '../../assets/images/Finance/';
   forceFolder =             '../../assets/images/Force/';
@@ -36,9 +30,8 @@ export class ViewSheetComponent implements OnInit {
             ];
 
   ngOnInit() {
-    console.table(this.StorageCards2);
-    console.log(this.StorageCards);
-
+    // console.table(this.StorageCards2);
+    // console.log(this.StorageCards);
   }
 
   changeCard(direction){
