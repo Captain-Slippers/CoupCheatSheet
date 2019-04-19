@@ -7,13 +7,19 @@
   </div>
 </div>
 
-<div class="slider">
+<div class="slider" (window:resize)=updateScreenSize()>
+  <!-- onresize="" -->
+  <!-- <span *ngFor="let item of cards; index as i">
+    <img src={{item}}.png  class="card card{{i}}">
+  </span> -->
 
-  <img class="current-card card" src={{cards[index]}}.png>
+  <img class="card card0" [ngStyle]="styleKeeper(0)" src={{cards[0]}}.png>
+  <img class="card card1" [ngStyle]="styleKeeper(1)" src={{cards[1]}}.png>
+  <img class="card card2" [ngStyle]="styleKeeper(2)" src={{cards[2]}}.png>
+  <img class="card card3" [ngStyle]="styleKeeper(3)" src={{cards[3]}}.png>
+  <img class="card card4" [ngStyle]="styleKeeper(4)" src={{cards[4]}}.png>
 
 </div>
-
-<!-- <h1>{{index}}</h1> -->
 
 <div class="big-card">
   <img src="../../assets/images/detailed/BigCard.JPG">
