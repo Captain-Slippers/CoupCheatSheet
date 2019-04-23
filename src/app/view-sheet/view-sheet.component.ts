@@ -72,8 +72,6 @@ export class ViewSheetComponent implements OnInit  {
     }
   }
 
-
-
   changeCard(direction){
     if (direction == 'f'){
       if (document.body.clientWidth < 1100 && document.body.clientWidth > 700){
