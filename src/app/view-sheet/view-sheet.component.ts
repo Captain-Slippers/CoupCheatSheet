@@ -29,8 +29,6 @@ export class ViewSheetComponent implements OnInit  {
             ];
 
   ngOnInit() {
-    // console.table(this.StorageCards2);
-    // console.log(this.StorageCards);
   }
 
   updateScreenSize(){
@@ -73,7 +71,7 @@ export class ViewSheetComponent implements OnInit  {
   }
 
   changeCard(direction){
-    if (direction == 'f'){
+    if (direction == 'r'){
       if (document.body.clientWidth < 1100 && document.body.clientWidth > 700){
         if (this.index < 3){
           this.index += 1
@@ -83,7 +81,7 @@ export class ViewSheetComponent implements OnInit  {
         this.index += 1
       }
     }
-    else if (direction == 'b'){
+    else if (direction == 'l'){
       if (document.body.clientWidth < 1100 && document.body.clientWidth > 700){
         if (this.index > 1){
           this.index -= 1

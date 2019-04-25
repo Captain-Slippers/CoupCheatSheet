@@ -2,12 +2,12 @@
   <h1>Your Cheatsheet</h1>
   <p>code: {{code}} </p>
   <div class="buttons">
-    <button mat-raised-button (click)="changeCard('b');">Back</button>
-    <button mat-raised-button (click)="changeCard('f');">Next</button>
+    <button mat-raised-button (click)="changeCard('r');">Back</button>
+    <button mat-raised-button (click)="changeCard('l');">Next</button>
   </div>
 </div>
 
-<div class="slider" (window:resize)=updateScreenSize()>
+<div class="slider" (window:resize)=updateScreenSize() (swipeLeft)="changeCard('l')" (swipeRight)="changeCard('r')">
 
   <span *ngFor="let item of cards; index as i">
     <img class="card card{{i}}" [ngStyle]="styleKeeper(i)" src={{cards[i]}}.png>
