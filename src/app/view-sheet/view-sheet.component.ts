@@ -16,23 +16,22 @@ export class ViewSheetComponent implements OnInit  {
   communicationFolder =     '../../assets/images/Communications/';
   specialInterestFolder =   '../../assets/images/Special Interest/';
 
-  StorageCards = localStorage.getItem('Code');
-  StorageCards2 = this.StorageCards.split(',');
+  StorageCardsString = localStorage.getItem('Code');
+  StorageCardsArray = this.StorageCardsString.split(',');
   code = '512d2';
 
 // tslint:disable-next-line: max-line-length
-  cards =   [this.financeFolder + this.StorageCards2[0],
-             this.forceFolder + this.StorageCards2[1],
-             this.communicationFolder + this.StorageCards2[2],
-             this.specialInterestFolder +  this.StorageCards2[3],
-             this.specialInterestFolder + this.StorageCards2[4]
+  cards =   [this.financeFolder + this.StorageCardsArray[0],
+             this.forceFolder + this.StorageCardsArray[1],
+             this.communicationFolder + this.StorageCardsArray[2],
+             this.specialInterestFolder +  this.StorageCardsArray[3],
+             this.specialInterestFolder + this.StorageCardsArray[4]
             ];
 
   ngOnInit() {
   }
 
   updateScreenSize(){
-    // I don't understand what is happening here but it works
   }
 
   trunckIndex(value: number){
