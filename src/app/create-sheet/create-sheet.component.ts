@@ -73,11 +73,7 @@ export class CreateSheetComponent implements OnInit {
   }
 
   createSheet(){
-    var tmp = ''
-    this.currentArray.forEach(i => {
-      tmp = tmp + i + ',';
-    });
     localStorage.removeItem('Code');
-    localStorage.setItem('Code', tmp);
+    localStorage.setItem('Code', this.currentArray.join());
   }
 }

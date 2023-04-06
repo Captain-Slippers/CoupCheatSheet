@@ -3,15 +3,11 @@
   <p>code: {{code}} </p>
 </div>
 
-<div class="slider" (window:resize)=updateScreenSize() (swipeLeft)="changeCard('l')" (swipeRight)="changeCard('r')">
-  <img class="buttons buttonLeft" (click)="changeCard('l')" src="../../assets/arrow-left.svg">
-  <span *ngFor="let item of cards; index as i">
-    <img class="card card{{i}}" [ngStyle]="styleKeeper(i)" src={{cards[i]}}.png>
-  </span>
-  <img class="buttons buttonRight" (click)="changeCard('r')" src="../../assets/arrow-right.svg"/>
+<div class="cards">
+  <div class="card" (click)="changeDetailed(item.title)" *ngFor="let item of cards">
+    <p>{{item.title}}</p>
+    <p>{{item.descTitle}}: {{item.desc}}</p>
+    <div [ngClass]="{'hidden': !openState[item.title]}">
+      <p>{{item.detailedDesc}}</p>
+    </div>
 </div>
-
-<div class="big-card">
-  <img src="../../assets/images/detailed/BigCard.JPG">
-</div>
-
